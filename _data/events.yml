@@ -1,0 +1,45 @@
+main_events:
+  - title: Erstes Vernetzungstreffen
+    date: 2025-02-03T10:00:00+01:00
+    start: 2025-02-03T10:00:00+01:00
+    end: 2025-02-03T12:00:00+01:00
+    location: Freie Universität Berlin, Exzellenzcluster »Temporal Communities«, Otto-von-Simson-Straße 15, 14195 Berlin, Raum 00.07 (UG)
+    registration_note: Anmeldung nicht erforderlich.
+    organized_by:
+  - title: Zweites Vernetzungstreffen
+    date: 2025-05-06T16:00:00+01:00
+    start: 2025-05-06T16:00:00+01:00
+    end: 2025-05-06T18:00:00+01:00
+    location: Staatsbibliothek Potsdamer Straße 33, Konferenzraum K1 
+    after_event: Ausklang ab 18:30 bei Kin Za (Krausnickstraße 23)
+    registration_note: Anmeldung erwünscht.
+    organized_by: Sophie Schneider
+  - title: Drittes Vernetzungstreffen
+    date: 2025-09-11T16:00:00+01:00
+    start: 2025-09-11T16:00:00+01:00
+    end: 2025-09-11T18:00:00+01:00
+    location: Berlin-Brandenburgische Akademie der Wissenschaften, Jägerstraße 22/23, Raum 228
+    registration_note: Anmeldung erwünscht.
+    organized_by: Ruth Sander
+    after_event: Ausklang ab 19:00 bei Salamat (Gartenstraße 1)
+  - title: Viertes Vernetzungstreffen und Beiträge zum Thema Schreibroutinen
+    date: 2025-12-01T16:00:00+01:00
+    start: 2025-12-01T16:00:00+01:00
+    end: 2025-12-01T18:00:00+01:00
+    location: Berlin-Brandenburgische Akademie der Wissenschaften, Jägerstraße 22/23
+    registration_note: Anmeldung zur Teilnahme und für Impulsbeiträge erwünscht.
+    organized_by: Ruth Sander
+  - title: Fünftes Vernetzungstreffen (Thema noch offen)
+    date: 2026-03-02T16:00:00+01:00
+    start: 2026-03-02T16:00:00+01:00
+    end: 2026-03-02T18:00:00+01:00
+    location: Berlin-Brandenburgische Akademie der Wissenschaften, Jägerstraße 22/23
+    organized_by: Ruth Sander
+    registration_note: Anmeldung zur Teilnahme und für Impulsbeiträge erwünscht.
+  - title: Sechstes Vernetzungstreffen (Thema noch offen)
+    date: 2026-06-03T16:00:00+01:00
+    start: 2026-06-03T16:00:00+01:00
+    end: 2026-06-03T18:00:00+01:00
+    location: Berlin-Brandenburgische Akademie der Wissenschaften, Jägerstraße 22/23
+    organized_by: Ruth Sander
+    registration_note: Anmeldung zur Teilnahme und für Impulsbeiträge erwünscht.

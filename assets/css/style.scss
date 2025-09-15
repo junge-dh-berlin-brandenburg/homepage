@@ -1,0 +1,182 @@
+/* Overlapping background images for horizontal blend */
+.bg-left,
+.bg-right {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60vw;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bg-right {
+    left: auto;
+    right: 0;
+}
+
+.bg-left {
+    -webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
+    mask-image: linear-gradient(to right, black 70%, transparent 100%);
+}
+
+.bg-right {
+    -webkit-mask-image: linear-gradient(to left, black 70%, transparent 100%);
+    mask-image: linear-gradient(to left, black 70%, transparent 100%);
+}
+
+body,
+html {
+    position: relative;
+    min-height: 100vh;
+    background: none !important;
+}
+
+main,
+.under_construction,
+.under_construction div {
+    position: relative;
+    z-index: 1;
+}
+
+main {
+    /*font-family: "Space Mono", monospace;*/
+    font-family: "Press Start 2P", system-ui;
+}
+
+.under_construction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.under_construction div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.under_construction div img {
+    border-radius: 100%;
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+}
+
+.glass-card {
+    background: rgba(80, 80, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    /* for Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin-bottom: 1em;
+
+}
+
+.black-card {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.teal-card {
+    background: rgba(120, 222, 222, 0.45);
+}
+
+
+.blue-card {
+    background: rgba(0, 0, 255, 0.15);
+}
+
+.green-card {
+    background: rgba(0, 128, 0, 0.15);
+}
+
+.purple-card {
+    background: rgba(128, 0, 128, 0.15);
+}
+
+.red-card {
+    background: rgba(255, 0, 0, 0.15);
+}
+
+.grey-card {
+    background: rgba(128, 128, 128, 0.15);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 1em auto 1em;
+}
+
+h3 {
+    margin-bottom: 2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+header {
+    background: rgba(80, 80, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    /* for Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+    margin: 2em 1em 2em 1em;
+}
+
+/* Make header a clipping container and place the SVG behind headings */
+header.teal-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-svg {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140%;
+    height: auto;
+    opacity: 0.20;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Ensure headings sit above the decorative SVG */
+header.teal-card h1,
+header.teal-card h2 {
+    position: relative;
+    z-index: 1;
+}
