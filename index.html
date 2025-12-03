@@ -50,6 +50,7 @@ title: "Junge Digital Humanities in Berlin & Brandenburg"
       {% endif %}
     </div>
     {% endfor %}
+    <br><br>
     <h3>Vergangene Veranstaltungen:</h3>
     <!-- Loop through past events and display them -->
     {%assign past-events = site.data.events.main_events | where_exp: "item", "item.date < site.time" | reverse %} {% for
