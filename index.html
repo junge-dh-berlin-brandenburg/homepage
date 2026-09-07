@@ -15,7 +15,7 @@ permalink: /
   -->
 
   <h3>Kommende Veranstaltungen:</h3>
-  {% assign upcoming-events = site.data.events.main_events | where_exp: "item", "item.date > site.time" %}
+  {% assign upcoming-events = site.data.events.main_events | where_exp: "item", "item.date > site.time" | sort: "date" %}
   {% for item in upcoming-events %}
     <div class="glass-card">
       <h4>{{ item.title }}</h4>
@@ -31,7 +31,7 @@ permalink: /
 
   <br><br>
   <h3>Vergangene Veranstaltungen:</h3>
-  {% assign past-events = site.data.events.main_events | where_exp: "item", "item.date < site.time" | reverse %}
+  {% assign past-events = site.data.events.main_events | where_exp: "item", "item.date < site.time" | sort: "date" | reverse %}
   {% for item in past-events %}
     <div class="glass-card grey-card">
       <h4>{{ item.title }}</h4>
